@@ -1,0 +1,143 @@
+h1 {
+    color: #DC2525;  
+    margin-top: 60px; 
+}
+.chuc_1, .chuc_2 {
+    color: #7a00ff;
+    position: absolute;
+    bottom: 0.1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+h1, h2, h3 {
+    text-align: center;
+}    
+#chu_ki {
+    position: fixed;
+    bottom: 3px;    
+    right: 10px;   
+    font-size: 20px;
+    color: #2d2d2d9b;
+}
+.trang_chinh{
+    position: absolte;   
+    top: 10px;        
+    left: 10px;        
+    padding: 10px 20px;
+    color: green;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.anh_home {
+    font-family: "Arial", sans-serif;
+    background: #00809D ;
+}
+.anh_1, .anh_2 {
+    font-family: "Arial", sans-serif;
+    background-image: url("https://i.postimg.cc/dQhX0094/Messenger-creation-D446907-E-FF5-F-4-FB9-88-A9-70-C72-F01-A81-D.jpg");        
+    background-size: 2500px;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+}
+.picture {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+#anh {
+  text-align: center;
+  width: 45%;
+}
+.anh img {
+  width: 100%; 
+  height: auto;
+}
+#pic_left, #pic_right {
+  width: 180px; 
+}
+#home_but {
+  transition: 3s;
+  background-color: #9BC09C;
+  font-size: 50px;
+}
+#home_but:active {
+  transition: 0.1s;
+  background-color: #D50B8B;
+  font-size: 70px;
+}
+
+#pic1_but, #pic2_but {
+    transition: 3s;
+    background-color: #F97A00;
+    font-size: 50px;
+}
+#pic1_but:active, #pic2_but:active {
+  transition: 0.1s;
+  background-color: #B6F500;
+  font-size: 70px;
+}
+#home_but.clicked, #pic1_but.cliked, #pic2_but.clicked {
+  transform: scale(5.0);
+  background-color: #901E3E;  
+}
+
+.cake_lucky {
+    position: relative;
+    width: 800px;
+    height: 700px;
+    margin: 100px auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+#cake, #lucky {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+#cake {
+    z-index: 2;
+    object-fit: cover;
+    transform-origin: center center;
+    transform: translateY(0%);
+    transform: scale(1);
+    opacity: 1;
+    transition: 3s;
+}
+#cake:active {
+    transform: scale(0);
+    transition: 3s;
+}    
+#lucky {
+    z-index: 1;
+    color: #C562AF;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: boder-box;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 3s;
+}
+#lucky:active {
+    background: #6DE1D2;
+    color: #3A0519;
+    font-size: 20px;
+    transition: 3s;
+}
+.cake_lucky.active #cake {
+    transform: translateY(100%);
+    opacity: 0;
+}
+.cake_lucky.active #lucky {
+    transform: translateY(0%);
+    opacity: 1;
+}
